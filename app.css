@@ -1,22 +1,44 @@
  body {
-    font-family: 'Montserrat', sans-serif;
-    margin:0;
-    background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  background-color: whitesmoke;
+  height: 100%;
 }
 
 h1{
-    color: black;
-    padding: 1rem;
-    margin: 0;
+  color: black;
+  margin: 0;
 }
+
 p{
-    color: black;
-    padding: 1rem;
-    margin: 0;
+  color: black;
+  padding: 1rem;
+  margin: 0;
 }
- .navbar{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)
+.header{
+  text-align: center;
+  margin: auto;
 }
+
+#navbar{
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    display: inline-flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: #a6c1ee;
+    float: right;
+    z-index: 1;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.row-1 {
+    display: inline;
+  }
 
 .container {
   display: flex;
@@ -28,9 +50,9 @@ p{
   margin: 0 auto;
   min-height: 5rem;
 }
+
 .btn {
   flex: 1 1 auto;
-  margin: 10px;
   padding: 30px;
   max-width: 150px;
   text-align: center;
@@ -39,57 +61,64 @@ p{
   background-size: 200% auto;
   color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-   box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)
+  border-radius: 0;
+  background-color: #a6c1ee;
  }
 
- .btn:hover {
-    background-image: url(https://media.giphy.com/media/xT9IgjHkJczyL3Ujle/giphy.gif);
-    background-position: right center; 
+
+.btn:hover {
+  background-position: right center; 
+  background-image: url(https://media.giphy.com/media/xT9IgjHkJczyL3Ujle/giphy.gif);
   }
 
-/* 
-  .btn-5{
-      
-  }
-  .btn-6{
-      background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)
-  }
-  .btn-4{
-      background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)
-  } */
+ 
+.parallax {
+  background-image: url("img_parallax.jpg");
+  min-height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
-  body, html {
-    height: 100%;
-  }
-  .parallax {
-        /* The image used */
-        background-image: url("img_parallax.jpg");
-      
-        /* Set a specific height */
-        min-height: 300px; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+.scroller{
+  font-size:30px;
+}
+
+
+.project-container{
+  position: relative;
+  color: black;
+  border-style: solid;
+  border-color: dimgrey;
+} 
+
+.text-block {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#chatterboxes{
+  opacity: 0.2;
+  max-width: 100%;
+  z-index: -1;
+}
+
+#click-tap-beats{
+  opacity: 0.2;
+  max-width: 100%;
+  z-index: -1;
+
       }
-      .scroller{
-        background-color: #a6c1ee;
-        font-size:36px;
-        
-      }
-      #chatterboxes{
-        opacity: 0.2;
-        max-height: 65rem
-      }
-      #click-tap-beats{
-        opacity: 0.2;
-        max-height: 50rem
-      }
-      #complimenter{
-        opacity: 0.2;
-        max-height: 45rem
-      }
+
+#complimenter{
+  opacity: 0.2;
+  max-width: 100%;
+  z-index: -1;
+
+    }
