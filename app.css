@@ -13,6 +13,11 @@ h3 {
   text-align: center;
 }
 
+p{
+  letter-spacing: 2px;
+  font: 18px "Lato", sans-serif;
+}
+
 
 
 .btn {
@@ -49,21 +54,35 @@ h3 {
 
 .bgimg-1 {
   background-image: url("./assets/chatterboxes.png");min-height: 100%;
+  margin: 70px;
+
 }
 
 .border{
   align-content: center;
   max-width: 100%;
 }
+
+.secondary{
+  background-color:black;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
     
 .bgimg-2 {
   background-image: url("./assets/clicktapbeats.png");
   min-height: 90%;
+  margin: 70px;
+
 }
     
 .bgimg-3 {
   background-image: url("./assets/complimenter.png");
-  min-height: 400px;
+  min-height: 90%;
+  margin: 70px;
+
 }
 
 .bgimg-4 {
