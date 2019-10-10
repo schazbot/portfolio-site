@@ -1,26 +1,30 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Raleway", sans-serif;
   color: #777;
 }
-
+h2 {
+  letter-spacing: 5px;
+  font: 20px "Raleway", sans-serif;
+  color:white;
+  text-align: center;
+}
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 20px "Raleway", sans-serif;
   color: #111;
   text-align: center;
 }
 
 p{
   letter-spacing: 2px;
-  font: 18px "Lato", sans-serif;
+  font: 18px "Raleway", sans-serif;
 }
 
-
-
 .btn {
+  font: 18px "Raleway", sans-serif;
   flex: 1 1 auto;
   padding: 30px;
   max-width: 100px;
@@ -54,7 +58,7 @@ p{
 
 .bgimg-1 {
   background-image: url("./assets/chatterboxes.png");min-height: 100%;
-  margin: 70px;
+  padding:50px 80px;
 
 }
 
@@ -64,26 +68,30 @@ p{
 }
 
 .secondary{
-  
+  position:relative;
+  color: #777;
+  background-color:black;
+  text-align:center;
+  padding:50px 80px;
+  text-align: center;
 }
     
 .bgimg-2 {
   background-image: url("./assets/clicktapbeats.png");
-  min-height: 90%;
-  margin: 70px;
-
+  min-height: 100%;
+  padding:50px 80px;
 }
     
 .bgimg-3 {
   background-image: url("./assets/complimenter.png");
   min-height: 90%;
-  margin: 70px;
-
+  padding:50px 80px;
 }
 
 .bgimg-4 {
   background-color: black;
   min-height: 100%;
+  padding:50px 80px;
 }
     
 .caption {
@@ -106,7 +114,7 @@ p{
 #navbar{
   background-color:black;
   position:fixed;
-  padding: 1%;
+  padding: 3%;
   height: auto;
 }
   
@@ -117,24 +125,10 @@ p{
   z-index: 999;
 }
 
-.border-3{
-  background-color:transparent;
-  font-size:25px;
-  color: #f7f7f7;
-}
-
 .detail{
   position:relative;
-  color: #777;
+  color:black;
   background-color:white;
-  text-align:center;
-  padding:50px 80px;
-  text-align: justify;
-}
-
-.detail-2{
-  color:#ddd;
-  background-color:#282E34;
   text-align:center;
   padding:50px 80px;
   text-align: justify;
