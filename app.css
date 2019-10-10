@@ -1,68 +1,41 @@
- body {
-  font-family: 'Montserrat', sans-serif;
-  margin:0;
-  background-color: whitesmoke;
+body, html {
   height: 100%;
-}
-
-h1{
-  color: black;
   margin: 0;
+  font: 400 15px/1.8 "Raleway", sans-serif;
+  color: #777;
+}
+h2 {
+  letter-spacing: 5px;
+  font: 20px "Raleway", sans-serif;
+  color:white;
+  text-align: center;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Raleway", sans-serif;
+  color: #111;
+  text-align: center;
 }
 
 p{
-  color: black;
-  padding: 1rem;
-  margin: 0;
-}
-.header{
-  text-align: center;
-  margin: auto;
-}
-
-#navbar{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    display: inline-flex;
-    overflow: hidden;
-    width: 100%;
-    background-color: #a6c1ee;
-    float: right;
-    z-index: 1;
-  }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-.row-1 {
-    display: inline;
-  }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: space-evenly;
-  flex-wrap: wrap-reverse;
-  max-width: 80vw;
-  margin: 0 auto;
-  min-height: 5rem;
+  letter-spacing: 2px;
+  font: 18px "Raleway", sans-serif;
 }
 
 .btn {
+  font: 18px "Raleway", sans-serif;
   flex: 1 1 auto;
   padding: 30px;
-  max-width: 150px;
+  max-width: 100px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  border-radius: 0;
-  background-color: #a6c1ee;
+  background-color: black;
+
  }
 
 
@@ -71,54 +44,92 @@ p{
   background-image: url(https://media.giphy.com/media/xT9IgjHkJczyL3Ujle/giphy.gif);
   }
 
- 
-.parallax {
-  background-image: url("img_parallax.jpg");
-  min-height: 300px; 
+
+
+    
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("./assets/chatterboxes.png");min-height: 100%;
+  padding:50px 80px;
+
+}
+
+.border{
+  align-content: center;
+  max-width: 100%;
+}
+
+.secondary{
+  position:relative;
+  color: #777;
+  background-color:black;
+  text-align:center;
+  padding:50px 80px;
   text-align: center;
 }
-
-.scroller{
-  font-size:30px;
+    
+.bgimg-2 {
+  background-image: url("./assets/clicktapbeats.png");
+  min-height: 100%;
+  padding:50px 80px;
+}
+    
+.bgimg-3 {
+  background-image: url("./assets/complimenter.png");
+  min-height: 90%;
+  padding:50px 80px;
 }
 
-
-.project-container{
-  position: relative;
-  color: black;
-  border-style: solid;
-  border-color: dimgrey;
-} 
-
-.text-block {
+.bgimg-4 {
+  background-color: black;
+  min-height: 100%;
+  padding:50px 80px;
+}
+    
+.caption {
   position: absolute;
-  top: 14px;
-  left: 20px;
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+    
+.caption span.border {
+  background-color:black;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+    
+#navbar{
+  background-color:black;
+  position:fixed;
+  padding: 3%;
+  height: auto;
+}
+  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-#chatterboxes{
-  opacity: 0.2;
-  max-width: 100%;
-  z-index: -1;
+.detail{
+  position:relative;
+  color:black;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
 }
-
-#click-tap-beats{
-  opacity: 0.2;
-  max-width: 100%;
-  z-index: -1;
-
-      }
-
-#complimenter{
-  opacity: 0.2;
-  max-width: 100%;
-  z-index: -1;
-
-    }

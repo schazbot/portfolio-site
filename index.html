@@ -5,52 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Charlotte Pearce</title>
     <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+    <style>
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="app">
-        <div id="navbar">
-            <div class="header">
-                <h1>Charlotte Pearce </h1>
-                <p>Full Stack Web Developer</p>
-            </div>
-            <a class="btn" href="https://github.com/schazbot">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/charlotte-pearce1984/">LinkedIn</a>
-            <a class="btn" href="https://medium.com/@charlotte.pearce1984">Medium</a>
+    <div id="navbar">
+        <a class="btn" href="https://github.com/schazbot">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/charlotte-pearce1984/">LinkedIn</a>
+        <a class="btn" href="https://medium.com/@charlotte.pearce1984">Medium</a>
+    </div>
+
+    <div class="bgimg-4">
+        <div class="caption">
+            <span class="border">Charlotte Pearce : Full Stack Web Developer</span>
+            <h2>Scroll to see more</h2>
         </div>
+    </div>
 
-        <div class="parallax">
-            <h2>Projects</h2>
+    <div class="bgimg-1">
+        <div class="border">
+            <div class="caption">
+                <span class="border">Chatterboxes</span>
+            </div>
         </div>
+    </div>
 
-        <div class="scroller">
+    <div class="detail">
+        <h3><a href="https://chatterboxes-ff906.web.app">Chatterboxes</a></h3>
 
-            <div class="project-container">
-                <img id="chatterboxes" src="./assets/chatterboxes.png" alt="sentence builder">
-                <div class="text-block">
-                    <h2>Chatterboxes</h2>
-                    <p>A free, Progressive Web App aimed at users with communication difficulties. Users choose
-                        symbols to create sentences and play their sentence out loud.</p>
-                </div>
-            </div>
-            <div class="project-container">
-                <img id="click-tap-beats" src="./assets/clicktapbeats.png" alt="drum machine">
-                <div class="text-block">
-                    <h2>Click Tap Beats</h2>
-                    <p>Make rhythms and add effects in real time. </p>
-                </div>
-            </div>
+        <p>An augmentative and alternative communication (AAC) tool, giving a voice to those who may not have one.
+            Search for symbols and pictures, create and edit your collection of symbols and build sentences that can
+            be spoken out loud by speech synthesis.
 
-            <div class="project-container">
-                <img id="complimenter" src="./assets/complimenter.png" alt="complimenter app">
-                <div class="text-block">
-                    <h2>Complimenter</h2>
-                    <p>Upload photos of your looks, and recieve compliments from Queer Eye's Jonathan Van Ness!</p>
-                </div>
+            Chatterboxes can be used as a tool for speech modeling, sentence
+            writing,or used to reinforce meaning for those who have English as an additional language. As
+            Chatterboxes is a progressive Web App, it can be easily downloaded to a mobile device, free of charge,
+            and uses open source symbols making this an accessible tool for those who need it.</p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="border">
+            <div class="caption">
+                <span class="border">Click Tap Beats</span>
             </div>
+        </div>
+    </div>
+
+    <div class="detail">
+        <h3><a href="https://schazbot.github.io/clicktapbeats/">Click Tap Beats</a></h3>
+        <p>Make drum rhythms by clicking the steps in the sequencer. Add effects and pads to your beats by
+            triggering sounds using your keyboard! Click Tap Beats utilises the Web Audio API and Tone JS to bring
+            music creation to your browser.</p>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border">Complimenter</span>
+        </div>
+    </div>
+    <div class="detail">
+        <h3><a href="https://complimenter-j-v-n.herokuapp.com/">Complimenter</a></h3>
+        <p>Ever needed the your own cheerleader to help you feel confident about your outfits? Complimenter allows
+            you to upload a photo of your look, and gives you a compliment in the style of Jonathan Van Ness from
+            Queer Eye! Using image recognition, JVN can give you specific compliments depending on the garment or
+            colour you're wearing.</p>
+    </div>
+
+    <div class="secondary">
+        <div class="caption">
+            <h2>charlotte.pearce1984@gmail.com</h2>
         </div>
     </div>
 </body>
