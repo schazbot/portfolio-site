@@ -26,7 +26,7 @@ p{
 .btn {
   font: 18px "Raleway", sans-serif;
   flex: 1 1 auto;
-  padding: 30px;
+  padding: 25px;
   max-width: 100px;
   text-align: center;
   text-transform: uppercase;
@@ -74,6 +74,8 @@ p{
   text-align:center;
   padding:50px 80px;
   text-align: center;
+  min-height: 100%;
+
 }
     
 .bgimg-2 {
@@ -114,7 +116,7 @@ p{
 #navbar{
   background-color:black;
   position:fixed;
-  padding: 3%;
+  padding: 2%;
   height: auto;
 }
   
