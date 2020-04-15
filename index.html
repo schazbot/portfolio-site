@@ -1,96 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Charlotte Pearce Portfolio Website</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Charlotte Pearce</title>
-    <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
-    <style>
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <div id="navbar">
-        <a class="btn" href="https://github.com/schazbot">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/charlotte-pearce1984/">LinkedIn</a>
-        <a class="btn" href="https://medium.com/@charlotte.pearce1984">Medium</a>
+      <a class="btn" href="https://github.com/schazbot">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/charlotte-pearce1984/"
+        >LinkedIn</a
+      >
+      <a class="btn" href="https://medium.com/@charlotte.pearce1984">Medium</a>
     </div>
 
     <div class="bgimg-4">
-        <div class="caption">
-            <span class="border">Charlotte Pearce : Full Stack Web Developer</span>
-            <h2>Scroll to see more</h2>
-        </div>
+      <div class="caption">
+        <span class="border">Charlotte Pearce : Front End Web Developer</span>
+        <ul class="landing-bullets">
+          <li>
+            I write tests and refactor code in React for
+            <a href="https://prideinlondon.org/">Pride in London</a>.
+          </li>
+          <li>
+            I'm a software engineering coach at
+            <a href="https://flatironschool.com/">Flatiron School</a>.
+          </li>
+          <li>
+            I like going to
+            <a href="http://www.codebar.io/">CodeBar</a> and
+            <a href="https://www.meetup.com/london-audio-developers/"
+              >Audio Dev</a
+            >
+            meetups.
+          </li>
+          <li>
+            I volunteered as a lead for
+            <a href="https://www.codefirstgirls.org.uk/">CodeFirst Girls</a>.
+          </li>
+          <li>
+            I love riding my bike, mixing records, baking and coding.
+          </li>
+        </ul>
+        <li></li>
+        <li></li>
+        <h2>Scroll to see projects</h2>
+      </div>
     </div>
 
     <div class="bgimg-1">
-        <div class="border">
-            <div class="caption">
-                <span class="border">Chatterboxes</span>
-            </div>
+      <div class="border">
+        <div class="caption">
+          <span class="border">Chatterboxes</span>
         </div>
+      </div>
     </div>
 
     <div class="detail">
-        <h3><a href="https://chatterboxes-ff906.web.app">Chatterboxes</a></h3>
-
-        <p>An augmentative and alternative communication (AAC) tool, giving a voice to those who may not have one.
-            Search for symbols and pictures, create and edit your collection of symbols and build sentences that can
-            be spoken out loud by speech synthesis.
-
-            Chatterboxes can be used as a tool for speech modeling, sentence
-            writing,or used to reinforce meaning for those who have English as an additional language. As
-            Chatterboxes is a progressive Web App, it can be easily downloaded to a mobile device, free of charge,
-            and uses open source symbols making this an accessible tool for those who need it.</p>
+      <h3><strong>Chatterboxes</strong></h3>
+      <a class="link" href="https://chatterboxes-ff906.web.app"
+        ><strong>Demo</strong></a
+      >
+      <a class="link" href="https://github.com/schazbot/chatterboxes-frontend"
+        ><strong>GitHub</strong></a
+      >
+      <p>
+        An augmentative and alternative communication (AAC) tool, giving a voice
+        to those who may not have one. Search for symbols and pictures, create
+        and edit your collection of symbols and build sentences that can be
+        spoken out loud by speech synthesis. Chatterboxes can be used as a
+        toolfor speech modeling, sentence writing,or used to reinforce meaning
+        for those who have English as an additional language. As Chatterboxes is
+        a progressive Web App, it can be easily downloaded to a mobile device,
+        free of charge, and uses open source symbols making this an accessible
+        tool for those who need it.
+      </p>
+      <ul>
+        <li>
+          React Frontend, Ruby on Rails Backend
+        </li>
+        <li>
+          Hosted on Firebase and Heroku
+        </li>
+        <li>
+          Progressive Web App
+        </li>
+        <li>
+          Uses
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API"
+            >Web Audio API</a
+          >
+          and <a href="https://www.opensymbols.org/api">OpenSymbols API</a>
+        </li>
+      </ul>
     </div>
 
     <div class="bgimg-2">
-        <div class="border">
-            <div class="caption">
-                <span class="border">Click Tap Beats</span>
-            </div>
+      <div class="border">
+        <div class="caption">
+          <span class="border">Click Tap Beats</span>
         </div>
+      </div>
     </div>
 
     <div class="detail">
-        <h3><a href="https://schazbot.github.io/clicktapbeats/">Click Tap Beats</a></h3>
-        <p>Make drum rhythms by clicking the steps in the sequencer. Add effects and pads to your beats by
-            triggering sounds using your keyboard! Click Tap Beats utilises the Web Audio API and Tone JS to bring
-            music creation to your browser.</p>
+      <h3>
+        <strong>Click Tap Beats</strong>
+      </h3>
+      <a class="link" href="https://schazbot.github.io/clicktapbeats/"
+        ><strong>Demo</strong></a
+      >
+      <a class="link" href="https://github.com/schazbot/clicktapbeats"
+        ><strong>GitHub</strong></a
+      >
+      <p>
+        Make drum rhythms by clicking the steps in the sequencer. Add effects
+        and pads to your beats by triggering sounds using your keyboard! Click
+        Tap Beats utilises the Web Audio API and Tone JS to bring music creation
+        to your browser.
+      </p>
+      <ul>
+        <li>
+          Vanilla Javascript & CSS
+        </li>
+        <li>
+          Hosted on GitHub Pages
+        </li>
+        <li>
+          Uses <a href="https://tonejs.github.io/">Tone.JS</a> & Web Audio API
+        </li>
+      </ul>
     </div>
 
     <div class="bgimg-3">
-        <div class="caption">
-            <span class="border">Complimenter</span>
-        </div>
+      <div class="caption">
+        <span class="border">Complimenter</span>
+      </div>
+    </div>
+
+    <div class="detail">
+      <h3>
+        <strong>Complimenter</strong>
+      </h3>
+      <a class="link" href="https://complimenter-j-v-n.herokuapp.com/">
+        <strong>Demo</strong></a
+      >
+      <a class="link" href="https://github.com/CalieR/complimenter-frontend"
+        ><strong>GitHub</strong></a
+      >
+      <p>
+        Ever needed the your own cheerleader to help you feel confident about
+        your outfits? Complimenter allows you to upload a photo of your look,
+        and gives you a compliment in the style of Jonathan Van Ness from Queer
+        Eye! Using image recognition, JVN can give you specific compliments
+        depending on the garment or colour you're wearing.
+      </p>
+      <ul>
+        <li>Hosted on Heroku</li>
+        <li>Uses a Postgres database</li>
+        <li>
+          Uses image tagging from <a href="https://imagga.com/">Imagga</a> API
+        </li>
+        <li>
+          Pair Project with
+          <a href="https://github.com/CalieR">Calie Rushton</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bgimg-5">
+      <div class="caption">
+        <span class="border">Toilers of the Sea Website</span>
+      </div>
     </div>
     <div class="detail">
-        <h3><a href="https://complimenter-j-v-n.herokuapp.com/">Complimenter</a></h3>
-        <p>Ever needed the your own cheerleader to help you feel confident about your outfits? Complimenter allows
-            you to upload a photo of your look, and gives you a compliment in the style of Jonathan Van Ness from
-            Queer Eye! Using image recognition, JVN can give you specific compliments depending on the garment or
-            colour you're wearing.</p>
+      <h3>
+        <strong>Toilers of the Sea Film Website</strong>
+      </h3>
+      <a class="link" href="https://toilersfilm.com/"> <strong>Demo</strong></a>
+      <p>
+        Website to promote Toiler of the Sea by Four Plus Films. Contracted by
+        the directors to create the website to promote the film.
+      </p>
+      <ul>
+        <li>Worked in Sprints to deliver product to client</li>
+        <li>
+          Worked alongside copy writer and photographer to create content for
+          the website
+        </li>
+        <li>
+          Used Squarespace's developer tools
+        </li>
+      </ul>
     </div>
-
     <div class="secondary">
-        <div class="caption">
-            <h2>charlotte.pearce1984@gmail.com</h2>
-        </div>
+      <div class="caption">
+        <h2>charlotte.pearce1984@gmail.com</h2>
+      </div>
     </div>
-</body>
-<script src="index.js">
-</script>
-
+  </body>
+  <script src="index.js"></script>
 </html>

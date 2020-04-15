@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Raleway", sans-serif;
@@ -7,7 +8,7 @@ body, html {
 h2 {
   letter-spacing: 5px;
   font: 20px "Raleway", sans-serif;
-  color:white;
+  color: white;
   text-align: center;
 }
 h3 {
@@ -18,9 +19,23 @@ h3 {
   text-align: center;
 }
 
-p{
+p {
   letter-spacing: 2px;
   font: 18px "Raleway", sans-serif;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+.landing-bullets {
+  color: #fff;
+  list-style-type: none;
 }
 
 .btn {
@@ -33,21 +48,19 @@ p{
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: black;
-
- }
-
+}
 
 .btn:hover {
-  background-position: right center; 
+  background-position: right center;
   background-image: url(https://media.giphy.com/media/xT9IgjHkJczyL3Ujle/giphy.gif);
-  }
+}
 
-
-
-    
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-5 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -57,45 +70,50 @@ p{
 }
 
 .bgimg-1 {
-  background-image: url("./assets/chatterboxes.png");min-height: 100%;
-  padding:50px 80px;
-
+  background-image: url("./assets/chatterboxes.png");
+  min-height: 100%;
+  padding: 50px 80px;
 }
 
-.border{
+.border {
   align-content: center;
   max-width: 100%;
 }
 
-.secondary{
-  position:relative;
+.secondary {
+  position: relative;
   color: #777;
-  background-color:black;
-  text-align:center;
-  padding:50px 80px;
+  background-color: black;
+  text-align: center;
+  padding: 50px 80px;
   text-align: center;
   min-height: 100%;
-
 }
-    
+
 .bgimg-2 {
   background-image: url("./assets/clicktapbeats.png");
   min-height: 100%;
-  padding:50px 80px;
+  padding: 50px 80px;
 }
-    
+
 .bgimg-3 {
   background-image: url("./assets/complimenter.png");
   min-height: 90%;
-  padding:50px 80px;
+  padding: 50px 80px;
 }
 
 .bgimg-4 {
   background-color: black;
   min-height: 100%;
-  padding:50px 80px;
+  padding: 50px 80px;
 }
-    
+
+.bgimg-5 {
+  background-image: url("./assets/toilersfilm.png");
+  min-height: 90%;
+  padding: 50px 80px;
+}
+
 .caption {
   position: absolute;
   left: 0;
@@ -104,22 +122,22 @@ p{
   text-align: center;
   color: #000;
 }
-    
+
 .caption span.border {
-  background-color:black;
+  background-color: black;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
-    
-#navbar{
-  background-color:black;
-  position:fixed;
+
+#navbar {
+  background-color: black;
+  position: fixed;
   padding: 2%;
   height: auto;
 }
-  
+
 .sticky {
   position: fixed;
   top: 0;
@@ -127,11 +145,11 @@ p{
   z-index: 999;
 }
 
-.detail{
-  position:relative;
-  color:black;
-  background-color:white;
-  text-align:center;
-  padding:50px 80px;
+.detail {
+  position: relative;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
   text-align: justify;
 }
