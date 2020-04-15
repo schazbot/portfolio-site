@@ -33,6 +33,11 @@ p {
   }
 }
 
+.landing-bullets {
+  color: #fff;
+  list-style-type: none;
+}
+
 .btn {
   font: 18px "Raleway", sans-serif;
   flex: 1 1 auto;
@@ -54,7 +59,8 @@ p {
 
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-5 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -99,6 +105,12 @@ p {
 .bgimg-4 {
   background-color: black;
   min-height: 100%;
+  padding: 50px 80px;
+}
+
+.bgimg-5 {
+  background-image: url("./assets/toilersfilm.png");
+  min-height: 90%;
   padding: 50px 80px;
 }
 
